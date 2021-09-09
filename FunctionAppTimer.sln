@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionAppQueueTriggerSave
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionAppHttpTriggerIActionResult", "FunctionAppHttpTriggerSaveToQueue\FunctionAppHttpTriggerIActionResult.csproj", "{1ED437F8-6866-45EC-AFEC-BC6A36B6639D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionAppDependencyInjection", "FunctionAppDependencyInjection\FunctionAppDependencyInjection.csproj", "{17496D51-4A10-4B34-9138-867DB7EAB1EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionAppDependencyInjection", "FunctionAppDependencyInjection\FunctionAppDependencyInjection.csproj", "{17496D51-4A10-4B34-9138-867DB7EAB1EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

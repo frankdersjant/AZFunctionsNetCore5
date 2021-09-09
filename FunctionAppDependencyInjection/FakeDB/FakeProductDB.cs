@@ -4,11 +4,11 @@ using System.Linq;
 
 namespace FunctionAppDependencyInjection.FakeProductDB
 {
-    public class FakeProductDB : IFakeProductDB
+    public class FakeProductsDB : IFakeProductDB
     {
         private List<Product> products;
 
-        public FakeProductDB()
+        public FakeProductsDB()
         {
             products = new List<Product>();
             products.Add(new Product { ProductID = 1, ProductName = "Ducati 916" });

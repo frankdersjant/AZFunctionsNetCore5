@@ -1,5 +1,4 @@
-﻿using FunctionAppDependencyInjection;
-using FunctionAppDependencyInjection.FakeProductDB;
+﻿using DAL;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -16,7 +15,7 @@ namespace AzureFunctionDependencyInjection
             // Registering services
             builder
                 .Services
-                .AddTransient<IFakeProductDB, FakeProductDB>();
+                .AddTransient<IDB, FakeDB>();
 
             //Transient: new service is created everytime they are requested from the service container  
         }

@@ -1,7 +1,6 @@
-using Microsoft.Azure.Functions.Worker.Configuration;
-using Microsoft.Extensions.Configuration;
+using FunctionAppDependencyInjection.FakeProductDB;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.Threading.Tasks;
 
 namespace FunctionAppDependencyInjection
 {
@@ -10,7 +9,16 @@ namespace FunctionAppDependencyInjection
         public static void Main()
         {
             var host = new HostBuilder()
+                .ConfigureAppConfiguration(configurationBuilder =>
+                {
+                })
                 .ConfigureFunctionsWorkerDefaults()
+                .ConfigureServices(services =>
+                {
+
+                    services.AddTransient<IFakeProductDB, FakeProductsDB>(); 
+
+                })
                 .Build();
 
             host.Run();
