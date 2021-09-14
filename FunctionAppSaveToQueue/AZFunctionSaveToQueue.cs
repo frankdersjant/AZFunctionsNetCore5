@@ -16,7 +16,7 @@ namespace FunctionAppSaveToQueue
             var logger = context.GetLogger("AzFunctionSaveToQueue");
             logger.LogInformation($" Queue qdemo trigger function processed: {orderItem}");
 
-            return "orderitem : " + orderItem + " processed at " + DateTime.Now; 
+            return "orderitem : " + orderItem + " processed at " + DateTime.Now;
         }
     }
 }
