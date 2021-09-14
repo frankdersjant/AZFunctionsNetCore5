@@ -24,7 +24,9 @@ namespace FunctionAppDependencyInjection
             var logger = executionContext.GetLogger("AzFunctionDependancyInject");
             logger.LogInformation("C# HTTP trigger function: AzFunctionDependancyInject processed a request.");
 
-            var result = _fakeDB.GetProducts();
+            var result = await Task.Run(() => _fakeDB.GetProducts());
+            //var result = _fakeDB.GetProducts();
+
             return new OkObjectResult(result);
         }
     }

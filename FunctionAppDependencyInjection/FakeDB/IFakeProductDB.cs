@@ -1,5 +1,6 @@
 ﻿using FunctionAppDependencyInjection.Domain;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace FunctionAppDependencyInjection.FakeProductDB
 {

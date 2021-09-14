@@ -15,12 +15,9 @@ namespace FunctionAppDependencyInjection
                 .ConfigureFunctionsWorkerDefaults()
                 .ConfigureServices(services =>
                 {
-
                     services.AddTransient<IFakeProductDB, FakeProductsDB>(); 
-
                 })
                 .Build();
-
             host.Run();
         }
     }
