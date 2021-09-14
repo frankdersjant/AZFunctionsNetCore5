@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionAppHttpTriggerIActi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionAppDependencyInjection", "FunctionAppDependencyInjection\FunctionAppDependencyInjection.csproj", "{17496D51-4A10-4B34-9138-867DB7EAB1EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionAppOutPutNet5", "FunctionAppOutPutNet5\FunctionAppOutPutNet5.csproj", "{D26AC486-A595-46C2-8D0B-A3884B680606}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionAppOutPutNet5", "FunctionAppOutPutNet5\FunctionAppOutPutNet5.csproj", "{D26AC486-A595-46C2-8D0B-A3884B680606}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
