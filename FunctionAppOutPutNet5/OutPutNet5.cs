@@ -8,8 +8,7 @@ namespace FunctionAppOutPutNet5
     public static class OutputNet5
     {
         [Function("OutputNet5")]
-        public static MyOutputType MultiOutputSample(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequestData req,
+        public static MyOutputType MultiOutputSample([HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequestData req,
             FunctionContext executionContext)
         {
             var logger = executionContext.GetLogger("OutputNet5");
