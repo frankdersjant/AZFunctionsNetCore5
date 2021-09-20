@@ -31,9 +31,7 @@ namespace FunctionAppOutPutNet5
         {
             [QueueOutput("testque")]
             public string Name { get; set; }
-
             public HttpResponseData HttpResponse { get; set; }
-
         }
     }
 }
